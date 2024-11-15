@@ -1,0 +1,127 @@
+/* Общий стиль для всех элементов */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Стили для ссылок */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Шапка */
+header {
+    background: #709ecb;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* Навигационное меню */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #2c3e50;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: #1abc9c;
+    border-radius: 5px;
+}
+
+/* Контейнер для основного контента */
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для изображений */
+img {
+    float: left;
+    margin: 0 15px 15px 0;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #34495e;
+    color: white;
+}
+
+/* Списки */
+ul, ol {
+    padding-left: 20px;
+}
+
+/* Нижний колонтитул */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2c3e50;
+    color: #fff;
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    img {
+        float: none;
+        margin: 0 auto 15px;
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
